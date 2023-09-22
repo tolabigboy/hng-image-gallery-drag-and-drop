@@ -29,7 +29,9 @@ const Nav = () => {
         {isUser ? (
           <button
             onClick={() => {
-              logout({ returnTo: window.location.origin });
+              logout({
+                returnTo: "https://image-gallery-drag-and-drop.netlify.app/",
+              });
             }}
           >
             Logout
